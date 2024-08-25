@@ -8,6 +8,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 class OfferAdmin(admin.ModelAdmin):
     list_display = ("code", "discount")
+    
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Offer, OfferAdmin)
